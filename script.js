@@ -55,9 +55,14 @@ function randomNumberInRange(min, max) {
     return risultato 
 };
 /* Come faccio ad aggiornare le due proprietà con il risultato di questa funzione? */
-
-
-
+//listaSquadre.puntiFatti = randomNumberInRange(1, 200);
+//console.log(listaSquadre) SBAGLIATO! Mi serve un ciclo
+for (let index = 0; index < listaSquadre.length; index++)/* Così scorro l'array */
+    {
+    listaSquadre[index].puntiFatti = randomNumberInRange(1, 200);
+    listaSquadre[index].falliSubiti = randomNumberInRange(1, 200);
+};
+console.log(listaSquadre)
 
 /* Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console. */ 
 
