@@ -34,9 +34,35 @@ Snack2
 Creare un array di oggetti di squadre di calcio.
 Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
 Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
-Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
-Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
+const listaSquadre = [
+    { NomeSquadra: "Milano", puntiFatti: 0, falliSubiti: 0 },
+    { NomeSquadra: "Bologna", puntiFatti: 0, falliSubiti: 0 },
+    { NomeSquadra: "Venezia", puntiFatti: 0, falliSubiti: 0 },
+    { NomeSquadra: "Trento", puntiFatti: 0, falliSubiti: 0 },
+    { NomeSquadra: "Tortona", puntiFatti: 0, falliSubiti: 0 },
+    { NomeSquadra: "Cremona", puntiFatti: 0, falliSubiti: 0 },
+    { NomeSquadra: "Trieste", puntiFatti: 0, falliSubiti: 0 },
+    { NomeSquadra: "Treviso", puntiFatti: 0, falliSubiti: 0 },
+    { NomeSquadra: "Napoli", puntiFatti: 0, falliSubiti: 0 },
+    { NomeSquadra: "Sassari", puntiFatti: 0, falliSubiti: 0 },
+    { NomeSquadra: "ReggioE", puntiFatti: 0, falliSubiti: 0 }
+]
+
+/* Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”. */
+function randomNumberInRange(min, max) {
+    const risultato = Math.floor(Math.random() * (max - min)) + min;
+    return risultato 
+};
+/* Come faccio ad aggiornare le due proprietà con il risultato di questa funzione? */
+
+
+
+
+/* Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console. */ 
+
+
+
 
 /*
 BONUS 
