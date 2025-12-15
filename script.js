@@ -41,7 +41,7 @@ const listaSquadre = [
     { NomeSquadra: "Venezia", puntiFatti: 0, falliSubiti: 0 },
     { NomeSquadra: "Trento", puntiFatti: 0, falliSubiti: 0 },
     { NomeSquadra: "Tortona", puntiFatti: 0, falliSubiti: 0 },
-    { NomeSquadra: "Cremona", puntiFatti: 0, falliSubiti: 0 },
+    
     { NomeSquadra: "Trieste", puntiFatti: 0, falliSubiti: 0 },
     { NomeSquadra: "Treviso", puntiFatti: 0, falliSubiti: 0 },
     { NomeSquadra: "Napoli", puntiFatti: 0, falliSubiti: 0 },
@@ -66,7 +66,21 @@ console.log(listaSquadre)
 
 /* Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console. */ 
 
+const nuovaLista = []
 
+for (let index = 0; index < listaSquadre.length; index++)/* Così scorro l'array */
+    {
+    const teamName = listaSquadre[index].NomeSquadra
+    const fouls = listaSquadre[index].falliSubiti
+      
+    console.log(teamName, fouls)
+
+    nuovaLista.push({
+        nomeSquadra: teamName,
+        falliSubiti: fouls
+    })
+};
+console.table(nuovaLista)
 
 
 /*
